@@ -4,8 +4,8 @@
     {
         public float Potential { get; set; }
 
-        public Human(EUnitClass _unitClass, int _atk, int _def, int _spd, float _potential)
-            : base(_unitClass, _atk, _def, _spd)
+        public Human(EUnitClass _unitClass, int _atk, int _def, int _spd, int _moveRange, float _potential)
+            : base(_unitClass, _atk, _def, _spd, _moveRange)
         {
             Potential = _potential;
         }
