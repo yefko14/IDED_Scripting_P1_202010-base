@@ -13,9 +13,9 @@
         public float BaseDefAdd { get; protected set; }
         public float BaseSpdAdd { get; protected set; }
 
-        public float Attack { get; protected set; }
-        public float Defense { get; protected set; }
-        public float Speed { get; protected set; }
+        public float Attack { get; }
+        public float Defense { get; }
+        public float Speed { get; }
 
         public EUnitClass UnitClass { get; protected set; }
 
