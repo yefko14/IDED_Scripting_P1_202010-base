@@ -8,6 +8,18 @@
             : base(_unitClass, _atk, _def, _spd, _moveRange)
         {
             Potential = _potential;
+            if (_unitClass == EunitClass.Imp)
+            {
+                _unitClass = EuniClass.Viillager;
+            }
+            else if (_unitClass == EunitClass.Orc)
+            {
+                _unitClass = EuniClass.Viillager;
+            }
+            else if(_unitClass = EuniClass.Dragon)
+            {
+                _unitClass = EuniClass.Viillager;
+            }
         }
 
         public virtual bool ChangeClass(EUnitClass newClass)
