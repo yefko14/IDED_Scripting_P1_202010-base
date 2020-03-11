@@ -56,14 +56,16 @@ namespace IDED_Scripting_P1_202010_base.Logic
         public float Speed { get; protected set; }
 
         protected Position CurrentPosition;
-        int rdnX = new Random(0, 100);
-        int rdnY = new Random(0, 100);
+        Random rdn = new Random();
 
         private EUnitClass unitClass;
         public EUnitClass UnitClass { get; protected set; }
         
         public Unit(EUnitClass _unitClass, int _atk, int _def, int _spd, int _moveRange)
         {
+            int rdnX = rdn.Next(0, 100);
+            int rdnY = rdn.Next(0, 100);
+
             UnitClass = _unitClass;
             BaseAtk = _atk;
             BaseDef = _def;
