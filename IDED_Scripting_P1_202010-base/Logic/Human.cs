@@ -22,15 +22,15 @@ namespace IDED_Scripting_P1_202010_base.Logic
 
             if (_unitClass == EUnitClass.Imp)
             {
-                _unitClass = EUniClass.Viillager;
+                _unitClass = EUnitClass.Villager;
             }
             else if (_unitClass == EUnitClass.Orc)
             {
-                _unitClass = EUniClass.Viillager;
+                _unitClass = EUnitClass.Villager;
             }
-            else if(_unitClass = EUniClass.Dragon)
+            else if(_unitClass == EUnitClass.Dragon)
             {
-                _unitClass = EUniClass.Viillager;
+                _unitClass = EUnitClass.Villager;
             }
 
             Attack = Attack + (Attack * Potential);
@@ -44,7 +44,7 @@ namespace IDED_Scripting_P1_202010_base.Logic
             {
                 if(UnitClass == EUnitClass.Soldier)
                 {
-                    Unitclass = EUnitClass.Squire;
+                    UnitClass = EUnitClass.Squire;
                     return true;
                 }
                 else if(UnitClass == EUnitClass.Squire)
@@ -60,9 +60,9 @@ namespace IDED_Scripting_P1_202010_base.Logic
                     UnitClass = EUnitClass.Mage;
                     return true;
                 }
-                else if (Unitclass == EUnitClass.Mage)
+                else if (UnitClass == EUnitClass.Mage)
                 {
-                    Unitclass = EUnitClass.Ranger;
+                    UnitClass = EUnitClass.Ranger;
                     return true;
                 }
             }
